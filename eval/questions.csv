@@ -1,0 +1,49 @@
+id,type,split,question,expected_answer,source_doc,must_contain
+Q1,refuse,dev,How many tier 1 IITs are there?,Not in the documents (they do not classify IITs into tiers),none,
+Q1b,lookup,dev,How many IITs are there in India?,Twenty-three,jee_adv_26_brochure,twenty-three
+Q2,lookup,dev,What percentage of seats is reserved for OBC-NCL candidates in IITs?,27% of seats in every course,jee_adv_26_brochure,27% of seats
+Q3a,lookup,dev,What percentage of seats is reserved for SC candidates in IITs?,15% of seats in every course,jee_adv_26_brochure,15% of seats
+Q3b,lookup,dev,What percentage of seats is reserved for ST candidates in IITs?,7.5% of seats in every course,jee_adv_26_brochure,7.5% of seats
+Q4a,lookup,dev,Do IITs have extra seats for female candidates in JEE Advanced 2026?,"Yes: supernumerary seats for female candidates, aimed at improving gender balance (target of at least 20% female enrolment per institute) - verify wording",jee_adv_26_brochure,female enrolment
+Q4b,lookup,dev,What is the IIT Kanpur Olympiad registration fee for a female candidate?,Rs 1600,iitk_olympiad_2026,1600
+Q5,lookup,dev,Do foreign national candidates have to write JEE Main 2026 before registering for JEE Advanced 2026?,"No, they can register directly for JEE Advanced if they meet the other eligibility criteria",jee_adv_26_brochure,not required to write
+Q6,two_docs,holdout,"What is the age limit for JEE Advanced 2026, and is there one for JEE Main 2026?",Advanced: born on or after 1 Oct 2001 (1 Oct 1996 for SC/ST/PwD). Main: no age limit,jee_adv_26_brochure,2001
+Q7,lookup,dev,When does online registration for JEE Advanced 2026 close?,"2 May 2026, 23:59 IST (fee payment until 4 May 2026)",jee_adv_26_brochure,"may 02, 2026"
+Q8,lookup,dev,Can PwD candidates get extra time or a scribe in JEE Advanced 2026?,"Yes: one hour of compensatory time per paper and a scribe, by filling the required form at registration",jee_adv_26_brochure,compensatory time
+Q9a,lookup,dev,Which documents does a GEN-EWS candidate need for JEE Advanced 2026 registration?,"GEN-EWS certificate issued on or after 1 April 2026, or a declaration in lieu of the certificate (plus Class X and XII documents)",jee_adv_26_brochure,"april 01, 2026"
+Q9b,lookup,dev,Do I have to upload an EWS or category certificate for JEE Main 2026?,"No upload: enter certificate number, date of issue and issuing authority",jee_main_26_faq,certificate number
+Q10,lookup,dev,"If I did not have a category certificate for JEE Main but have one for JEE Advanced, can I claim that category in JEE Advanced 2026?",No: the category in the JEE Main database is final and requests for change of category are not entertained,jee_adv_26_brochure,change of category will not be entertained
+Q11,lookup,dev,When can admit cards for JEE Advanced 2026 be downloaded?,11 May 2026 (17:00 IST) to 17 May 2026 (14:30 IST),jee_adv_26_brochure,"may 11, 2026"
+Q12,lookup,dev,Which programmes at IIT Kanpur can be entered through the Olympiad route in 2026-27?,"B.Tech: BSBE, CSE, Intelligent Systems; B.S.: Chemistry, Economics, Mathematics & Scientific Computing, Physics, Statistics & Data Science - verify against the programme table",iitk_olympiad_2026,intelligent systems
+Q13,lookup,dev,Which Olympiads qualify me for CSE at IIT Kanpur through the Olympiad route?,"Mathematics (IMOTC) and Informatics (IOITC), 3 seats each",iitk_olympiad_2026,informatics
+Q14,refuse,dev,How much score is required to get CSE at IIT Kanpur through the Olympiad route?,Not in the documents,iitk_olympiad_2026,
+Q15,lookup,dev,Is there reservation for category or female candidates in the IIT Kanpur Olympiad route?,No separate seats for reserved categories and no female supernumerary seats,iitk_olympiad_2026,no separate seats reserved
+Q16,lookup,dev,How much is the registration fee for IIT Kanpur Olympiad admission?,"Rs 1600 for female, SC, ST and PwD candidates; Rs 3200 for all others",iitk_olympiad_2026,3200
+Q17,lookup,dev,When is the allotted seat confirmed in the IIT Kanpur Olympiad route?,1 July 2026,iitk_olympiad_2026,1 july 2026
+Q18,conflict,dev,Do I need to upload address proof for JEE Main 2026?,Not in the 2026 documents; the 2023 FAQ (outdated) required address proof upload,jee_main_2023_faq,upload address proof
+Q19,conflict,dev,My Aadhaar address is different from where I live now. What should I do for JEE Main?,"2026 documents give no address-proof rule. The 2023 FAQ (outdated) allowed separate proof for the present address (school ID, rent agreement, bank passbook, court affidavit)",jee_main_2023_faq,affidavit
+Q20,lookup,holdout,What are the NTA helpline numbers for JEE Main 2026?,011-40759000 and 011-69227700 (email jeemain@nta.ac.in),jee_main_26_faq,011-40759000
+Q21,lookup,dev,Which JEE Main paper do B.Arch candidates have to take?,Paper 2A,jee_main_26_bulletin,paper 2a
+Q22,lookup,holdout,When is JEE Main 2026 Session 1 conducted?,Between 21 and 30 January 2026 (listed as tentative in the FAQ),jee_main_26_bulletin,21 january
+Q23,conflict,dev,Do I get to choose which numerical questions to attempt in JEE Main 2026?,2026 Section B has 5 numerical questions per subject (75 questions in total) with negative marking. In 2023 candidates attempted any 5 of 10,jee_main_26_bulletin,filled in as a numerical value
+Q24,lookup,dev,How many aptitude test questions are there in JEE Main 2026 Paper 2A (B.Arch)?,50 questions (200 marks) in Part II Aptitude Test,jee_main_26_bulletin,aptitude test
+Q25,lookup,dev,What happens if a JEE Main question has more than one correct answer?,+4 is awarded only to candidates who marked a correct option (questions normally have one correct answer),jee_main_26_bulletin,more than one option is found to be correct
+Q26,lookup,holdout,I am re-appearing in 2 subjects of Class XII. What do I choose in the Class XII status option for JEE Main 2026?,Passed,jee_main_26_faq,reappearing
+Q27,conflict,holdout,What pin code should foreign national (OCI/PIO) candidates enter in the JEE Main application?,111111 in 2026 (the 2023 FAQ said 000000),jee_main_26_faq,111111
+J1,lookup,dev,What is the JoSAA 2026 seat acceptance fee for an SC candidate?,"Rs 15,000 including Rs 5,000 processing charges",josaa_2026_business_rules,"15,000"
+J2,lookup,dev,What is the JoSAA 2026 seat acceptance fee for an OBC-NCL candidate?,"Rs 30,000 including Rs 5,000 processing charges",josaa_2026_business_rules,"30,000"
+J3,lookup,dev,What happens if I do not pay the JoSAA seat acceptance fee?,Treated as rejection of the seat; no further rounds,josaa_2026_business_rules,non-payment of the seat acceptance fee
+J4,lookup,dev,How much is deducted if I withdraw from JoSAA after paying the seat acceptance fee?,Rs 7000 withdrawal processing charge,josaa_2026_business_rules,7000
+J5,lookup,dev,What is deducted if my JoSAA seat is cancelled because of document problems?,Rs 5000 JoSAA processing charges,josaa_2026_business_rules,unresolved discrepancy
+J6,lookup,holdout,What does the Freeze option mean in JoSAA?,Accept the seat and do not take part in later rounds,josaa_2026_business_rules,does not want to participate in further
+J7,lookup,dev,What is the difference between Float and Slide in JoSAA?,Float: higher preference at any institute. Slide: only within the same institute,josaa_2026_business_rules,within the same institute
+J8,lookup,dev,Can I choose Float or Slide in the last round of JoSAA 2026?,No,josaa_2026_business_rules,not available in the last round
+J9,lookup,dev,When does JoSAA 2026 choice filling start and end?,2 June 2026 17:00 to 11 June 2026 17:00,josaa_2026_business_rules,"june 02, 2026 and june 11, 2026"
+J10,lookup,dev,When is Round 1 seat allocation in JoSAA 2026?,"13 June 2026, 10:00 IST",josaa_2026_business_rules,seat allocation (round 1)
+J11,lookup,holdout,What is the last date to pay the fee in JoSAA Round 1?,26 June 2026 by 17:00,josaa_2026_business_rules,last date for fee payment (round 1)
+J12,lookup,dev,How many seat allocation rounds are there for IITs in JoSAA 2026?,Five; Round 5 on 16 July 2026 is final,josaa_2026_business_rules,final round for iits/iisc
+J13,lookup,dev,Is there a spot round or special round for IITs in JoSAA 2026?,No,josaa_2026_business_rules,no spot round or special round
+J14,conflict,dev,What is the last date to withdraw an IIT seat in JoSAA 2026?,14 July 2026 17:00 IST (the Olympiad brochure text also mentions 13 July),josaa_2026_business_rules,"july 14, 2026 (17:00"
+J15,two_docs,holdout,Which applies if JoSAA rules differ from the JEE Main bulletin or JEE Advanced brochure?,JoSAA Business Rules supersede both,josaa_2026_business_rules,shall supersede
+J16,two_docs,dev,What validity must an online-verifiable EWS or OBC-NCL certificate have for IIT admission through JoSAA 2026?,"At least till 21 July 2026, or issued on or after 1 April 2026 (IITs and IISc; NIT+ differs)",josaa_2026_business_rules,"july 21, 2026"
+J17,refuse,holdout,Will I get CSE at IIT Delhi with a JEE Advanced rank of 3000?,Not in the documents,none,
