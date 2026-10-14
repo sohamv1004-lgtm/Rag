@@ -1,0 +1,1 @@
+Query ‘category certificate mandatory’: 2023 FAQ ranked 1st (15.9), 2026 FAQ 2nd (15.3). Retrieval finds both, but can’t tell which is current.
