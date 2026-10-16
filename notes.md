@@ -8,4 +8,19 @@ ALL         37        92%         70%
 The initial BM-25 fails and retrieves wrong documents for the missed cases.
 Missed (fact not in top 5):
   Q1b | How many IITs are there in India? | ['jee_main_26_faq p5', 'jee_main_2023_faq p9', 'jee_main_2023_faq p5']
+  === HYBRID + RERANK (TOP 50) (top-5, dev questions only) ===
+type         n  right doc  fact found
+conflict     4       100%         25%
+lookup      32       100%         88%
+two_docs     1       100%        100%
+ALL         37       100%         81%
+
+=== HYBRID (top-5, dev questions only) ===
+type         n  right doc  fact found
+conflict     4        75%         75%
+lookup      32        97%         78%
+two_docs     1       100%        100%
+ALL         37        95%         78%
+Update-Hybrid outperformed the rerank one initially.
+
   
