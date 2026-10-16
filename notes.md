@@ -23,4 +23,5 @@ two_docs     1       100%        100%
 ALL         37        95%         78%
 Update-Hybrid outperformed the rerank one initially.
 
+Hybrid+rerank+labels makes it 86%
   
