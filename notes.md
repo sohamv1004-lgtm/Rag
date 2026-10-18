@@ -32,7 +32,12 @@ Summary by type:
   lookup: {'check by hand': 2, 'FAIL (refused)': 1, 'pass': 2}
   conflict: {'pass': 1}
   refuse: {'pass': 2}
-  
+### Failure: Q26 (retrieval)
+search can find it but ranked it outside the top 8 (confirmed with diagnose.py).
+Ideas not yet tested:
+- Larger candidate pool or a stronger reranker model
+- LLM query rewriting before retrieval
+- HyDE (embed a model-written hypothetical answer instead of the raw question)
 
 
 
