@@ -38,6 +38,19 @@ Ideas not yet tested:
 - Larger candidate pool or a stronger reranker model
 - LLM query rewriting before retrieval
 - HyDE (embed a model-written hypothetical answer instead of the raw question)
+Holdout (8 retrieval-scored questions, top-8):
+ hybrid        6/8 fact found, 8/8 right doc
+ hybrid+rerank 5/8 fact found, 7/8 right doc
+Small sample; one question = 12.5 points. Reranker gain from dev did not replicate on holdout.
+Table heavy chunks were extracted poorly(Q22 AND Q17).
+=== HYBRID + RERANK (TOP 50) (top-8, holdout questions only) ===
+type         n      right doc     fact found
+conflict     1    1/1   100%    1/1   100%
+lookup       5    4/5    80%    3/5    60%
+two_docs     2    2/2   100%    1/2    50%
+ALL          8    7/8    88%    5/8    62%
+
+
 
 
 
