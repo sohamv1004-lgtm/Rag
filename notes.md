@@ -23,5 +23,16 @@ two_docs     1       100%        100%
 ALL         37        95%         78%
 Update-Hybrid outperformed the rerank one initially.
 
-Hybrid+rerank+labels makes it 86%
+Hybrid+rerank+labels makes it 86% and fetching top 8 makes it 89%
+After evaluation using k=8:
+Majority of them passed using Nvidia Api and a few were manually checked and 2 failed whose reasons are given in the csv file.
+How the llm performed on the holdout set
+Summary by type:
+  two_docs: {'pass': 1, 'check by hand': 1}
+  lookup: {'check by hand': 2, 'FAIL (refused)': 1, 'pass': 2}
+  conflict: {'pass': 1}
+  refuse: {'pass': 2}
   
+
+
+
